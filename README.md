@@ -126,6 +126,14 @@ Run the project (UI Swagger should open):
 
 `dotnet run`
 
+Swagger UI for API testing:
+
+The project is configured to run on HTTP using Kestrel.
+
+When started, Swagger UI opens automatically in your browser.
+
+You can use Swagger to test all available endpoints—no need for Postman.
+
 7. Unit Testing Project
 
 Located in a separate test project and a reference is added to it of the main project.
@@ -139,6 +147,4 @@ Install dependencies:
 
 8. Summary
 
-This football league system is a cleanly architected Web API using modern .NET practices. It follows SOLID principles, uses relevant design patterns, and separates concerns across layers.
-
-With rankings auto-updated based on league match results and Dockerized SQL Server setup, it's easily deployable and testable.
+This football league system is a cleanly architected Web API using modern .NET practices. It follows SOLID principles, uses relevant design patterns, and separates concerns across layers. With rankings auto-updated based on league match results, Swagger integration for testing, and a Dockerized SQL Server, it's easily deployable, testable, and maintainable.
