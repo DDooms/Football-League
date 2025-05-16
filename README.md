@@ -128,7 +128,7 @@ Run the project (UI Swagger should open):
 
 Swagger UI for API testing:
 
-The project is configured to run on HTTP using Kestrel.
+I have run the project using Http (Kestrel)
 
 When started, Swagger UI opens automatically in your browser.
 
