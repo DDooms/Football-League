@@ -101,11 +101,11 @@ DataGrip for DB UI
 Clone the repository:
 
 Install dependencies:
-Microsoft.EntityFrameworkCore.SqlServer
+`Microsoft.EntityFrameworkCore.SqlServer`
 
-Microsoft.EntityFrameworkCore.Tools
+`Microsoft.EntityFrameworkCore.Tools`
 
-Microsoft.EntityFrameworkCore
+`Microsoft.EntityFrameworkCore`
 
 Start SQL Server in Docker (make sure Docker is running) (cmd command):
 
@@ -130,13 +130,12 @@ Run the project (UI Swagger should open):
 
 Located in a separate test project and a reference is added to it of the main project.
 
-Uses:
+Install dependencies:
+`MSTest`
 
-MSTest as the test framework.
+`Moq`
 
-Moq for mocking dependencies.
-
-FluentAssertions for readable assertions.
+`FluentAssertions`
 
 8. Summary
 
