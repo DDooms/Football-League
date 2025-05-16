@@ -56,26 +56,35 @@ Returns appropriate HTTP status codes and messages to the controller layer.
 
 6. How to Run the Project
 6.1 Prerequisites
+   
 .NET 8 SDK
+
 Docker Desktop
+
 DataGrip for DB UI
 
 6.2 Setup Instructions
 Clone the repository:
+
 Install dependencies:
 Microsoft.EntityFrameworkCore.SqlServer
+
 Microsoft.EntityFrameworkCore.Tools
+
 Microsoft.EntityFrameworkCore
 
 Start SQL Server in Docker (make sure Docker is running) (cmd command):
+
 `docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=YOUR_PASSWORD" -p 1433:1433 --name sqlcontainer -d mcr.microsoft.com/mssql/server:2022-latest`
 
 Update appsettings.json with the connection string:
+
 `"ConnectionStrings": {
   "DefaultConnection": "Server=localhost,1433;Database=YOUR_DATABASE_NAME;User Id=sa;Password=YOUR_PASSWORD;"
 }`
 
 Create and apply migrations:
+
 `dotnet ef create migrations FirstMigration
 dotnet ef database update`
 
