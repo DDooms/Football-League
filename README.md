@@ -68,11 +68,11 @@ Microsoft.EntityFrameworkCore.Tools
 Microsoft.EntityFrameworkCore
 
 Start SQL Server in Docker (make sure Docker is running) (cmd command):
-`docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=PASSWORD" -p 1433:1433 --name sqlcontainer -d mcr.microsoft.com/mssql/server:2022-latest`
+`docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=YOUR_PASSWORD" -p 1433:1433 --name sqlcontainer -d mcr.microsoft.com/mssql/server:2022-latest`
 
 Update appsettings.json with the connection string:
 `"ConnectionStrings": {
-  "DefaultConnection": "Server=localhost,1433;Database=DATABASE_NAME;User Id=sa;Password=PASSWORD;"
+  "DefaultConnection": "Server=localhost,1433;Database=YOUR_DATABASE_NAME;User Id=sa;Password=YOUR_PASSWORD;"
 }`
 
 Create and apply migrations:
