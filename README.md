@@ -10,8 +10,8 @@ Match: Represents a played match between two teams, including scores and match t
 
 2.2 Enums
 MatchType: Enum with values:
-League = 1
-Friendly = 2
+`League = 1
+Friendly = 2`
 
 2.3 Data Access Layer
 ApplicationDbContext: Entity Framework Core DbContext managing entities and the database connection.
@@ -68,19 +68,19 @@ Microsoft.EntityFrameworkCore.Tools
 Microsoft.EntityFrameworkCore
 
 Start SQL Server in Docker (make sure Docker is running) (cmd command):
-'docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=PASSWORD" -p 1433:1433 --name sqlcontainer -d mcr.microsoft.com/mssql/server:2022-latest'
+`docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=PASSWORD" -p 1433:1433 --name sqlcontainer -d mcr.microsoft.com/mssql/server:2022-latest`
 
 Update appsettings.json with the connection string:
-'"ConnectionStrings": {
+`"ConnectionStrings": {
   "DefaultConnection": "Server=localhost,1433;Database=DATABASE_NAME;User Id=sa;Password=PASSWORD;"
-}'
+}`
 
 Create and apply migrations:
-'dotnet ef create migrations FirstMigration'
-'dotnet ef database update'
+`dotnet ef create migrations FirstMigration
+dotnet ef database update`
 
-Run the project:
-dotnet run (UI Swagger should open)
+Run the project (UI Swagger should open):
+`dotnet run`
 
 7. Unit Testing Project
 Located in a separate test project and a reference is added to it of the main project.
