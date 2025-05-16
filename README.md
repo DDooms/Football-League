@@ -6,6 +6,28 @@ This project is a football league management system implemented as a RESTful Web
 
 It allows managing teams and their played matches, calculates rankings dynamically based on match results, and exposes endpoints for CRUD operations on teams and matches.
 
+Matches API
+This API is responsible for managing "Matches" resources. 
+GET /api/Matches: This endpoint retrieves a list of all available matches. 
+POST /api/Matches: This endpoint is used to create a new match. 
+GET /api/Matches/{id}: This endpoint retrieves a specific match by its unique identifier (id). 
+PUT /api/Matches/{id}: This endpoint is used to update an existing match identified by its id. 
+DELETE /api/Matches/{id}: This endpoint deletes a specific match identified by its id. 
+
+Ranking API
+This API deals with the league table.
+
+GET /api/Ranking: This endpoint retrieves the current league table, where teams are ranked by points.
+
+Teams API
+This API manages "Teams" resources.
+
+GET /api/Teams: This endpoint retrieves a list of all teams. 
+POST /api/Teams: This endpoint is used to create a new team. 
+GET /api/Teams/{id}: This endpoint retrieves a specific team by its unique identifier (id). 
+PUT /api/Teams/{id}: This endpoint is used to update an existing team identified by its id. 
+DELETE /api/Teams/{id}: This endpoint deletes a specific team identified by its id. 
+
 2. Architecture & Components
 
 2.1 Entities
