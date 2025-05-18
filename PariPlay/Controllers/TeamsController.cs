@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PariPlay.Models.DTOs;
 using PariPlay.Models.DTOs.TeamDTOs;
 using PariPlay.Services.Interfaces;
 
